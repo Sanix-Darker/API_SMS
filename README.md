@@ -1,3 +1,7 @@
+<center>
+   <img src="img/api-sms.png" />
+</center>
+
 # API SMS
 
 ## Introduction
@@ -7,7 +11,7 @@ We will need an api hosted online an a personnal electronc device.
 
 ## The Setup
 
-<img src="img/img.png">
+<img src="img/img.png" />
 
 ## Requirements
 

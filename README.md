@@ -2,7 +2,7 @@
    <img src="img/api-sms.png" />
 </center>
 
-# API SMS
+# < > API SMS
 
 ## Introduction
 
@@ -36,3 +36,7 @@ We will need an api hosted online an a personnal electronc device.
 ## Author
 
 - [Sanix-darker](https://github.com/sanix-darker)
+
+## LICENSE
+
+[MIT License](https://github.com/Sanix-Darker/API_SMS/blob/master/LICENSE)

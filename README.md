@@ -14,13 +14,20 @@ We will need an api hosted online an a personnal electronc device.
  - Electronic requirements: 
     - ESP8266
     - GSM 800 for sending and receive SMS
+    - A valid SIM CARD
     - Arduino Mother board card
     - SD Card (Optional for the main feature)
     - LCD Screen
 
  - Software requirements: 
-    - Arduino IDE
+    - Arduino IDE (to compile the code on your arduino shield)
     - VsCode (any Programming editor)
+
+## Project pattern
+
+## How it's work
+
+## How to use it work
 
 ## Author
 

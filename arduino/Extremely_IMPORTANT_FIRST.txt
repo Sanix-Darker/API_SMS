@@ -1,0 +1,3 @@
+I noticed that all arduino shield doesn't have automaticaly the GSM lib on their PC, so please follow theese few steps:
+
+1 -) Copy The Directory: GSM_GPRS_GPS_Shield_GSMSHIELD to your : "C:\Program Files (x86)\Arduino\libraries"

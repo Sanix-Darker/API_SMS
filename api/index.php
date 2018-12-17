@@ -14,6 +14,8 @@
     header("Pragma: no-cache");
     header('Content-Type:application/json; Charset=UTF-8');
 
+    require('functions.php');
+
     $result = array();
     $valid_message = false;
     $valid_number = false;
@@ -44,7 +46,21 @@
         }
 
         if($valid_message && $valid_number){
+            if(!api_CheckIfLineExistInFile('done.txt', $_REQUEST['number']."|".$_REQUEST['message'])){
 
+                if(!api_CheckIfLineExistInFile('waiting.txt', $_REQUEST['number']."|".$_REQUEST['message'])){
+                    api_writeFile("waiting.txt", $_REQUEST['number']."|".$_REQUEST['message']);
+                    $result['status'] = 'success';
+                    $result['reason'] = 'Your message request has been save by the api and will be threat in few seconds.';
+                }else{
+                    $result['status'] = 'success';
+                    $result['reason'] = 'Your message request is Pending please wait...';
+                }
+
+            }else{
+                $result['status'] = 'success';
+                $result['reason'] = 'message sent successfully.';
+            }
         }
 
     }else{
